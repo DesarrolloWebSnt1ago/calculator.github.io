@@ -1,24 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+    </header>
     <main id="container">
-        <section class="calculator">
-            <form action="">
-                <section>
-                    <input type="text" name="display">
-                </section>
-                <section>
-                    
-                </section>
-            </form>
+      <section id="calculator">
+        <!--display------------------------------------->
+        <p id="result">0</p>
+        <!--display------------------------------------->
+        <table>
+          <tr>
+            <!--------------------------------------->
+            <td>
+              <button class="btn" value="c"><p>C</p></button>
+            </td>
+            <!------------------------------------->
 
-        </section>
+            <!---------------------------->
+            <td>
+              <button class="btn" value="x">
+                <span class="material-symbols-outlined"> backspace </span>
+              </button>
+            </td>
+            <!---------------------------->
+
+            <!---------------------------->
+            <td>
+              <button class="btn" value="/"><p>/</p></button>
+            </td>
+            <!---------------------------->
+
+            <!---------------------------->
+            <td>
+              <button class="btn" value="*"><p>X</p></button>
+            </td>
+            <!---------------------------->
+          </tr>
+
+          <tr>
+            <!------------------------------>
+            <td>
+              <button class="num" value="7">7</button>
+            </td>
+            <td>
+              <button class="num" value="8">8</button>
+            </td>
+            <td>
+              <button class="num" value="9">9</button>
+            </td>
+            <!------------------------------>
+
+            <!---------------------------->
+            <td>
+              <button class="btn" value="-"><p>-</p></button>
+            </td>
+            <!---------------------------->
+          </tr>
+          <tr>
+            <!------------------------------>
+            <td>
+              <button class="num" value="4">4</button>
+            </td>
+            <td>
+              <button class="num" value="5">5</button>
+            </td>
+            <td>
+              <button class="num" value="6">6</button>
+            </td>
+            <!------------------------------>
+
+            <!---------------------------->
+            <td>
+              <button class="btn" value="+"><p>+</p></button>
+            </td>
+            <!---------------------------->
+          </tr>
+          <tr>
+            <!------------------------------>
+            <td>
+              <button class="num" value="1">1</button>
+            </td>
+            <td>
+              <button class="num" value="2">2</button>
+            </td>
+            <td>
+              <button class="num" value="3">3</button>
+            </td>
+            <!------------------------------>
+
+            <!---------------------------->
+            <td rowspan="2">
+              <button class="btn" value="="><p>=</p></button>
+            </td>
+            <!---------------------------->
+          </tr>
+          <tr>
+            <!---------------------------->
+            <td colspan="2">
+              <button class="num" value="0">0</button>
+            </td>
+            <!---------------------------->
+
+            <!---------------------------->
+            <td>
+              <button class="btn" value=".">.</button>
+            </td>
+            <!---------------------------->
+          </tr>
+        </table>
+      </section>
     </main>
-</body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
