@@ -48,30 +48,17 @@ buttons.forEach((button) => {
         try {
           const resultado = eval(display.textContent);
           if (resultado === Infinity || resultado === -Infinity) {
-            display.textContent = "No se puede dividir entre cero";
+            display.textContent = "¡Error!";
           } else {
             display.textContent = resultado;
           }
         } catch (error) {
           // Manejar el error de forma adecuada
           // Mostrar un mensaje de error al usuario
-          console.log(error.message);
+          display.textContent = error.message;
+
         }
         break;
     }
-
-    // primerValor = document.getElementById("resultado").textContent;
   });
 });
-
-// const igualButton = document.getElementById("igual");
-
-// igualButton.addEventListener("click", function () {
-//   if (operador === "" || primerValor === "" || ultimoValor === "") {
-//     // Mostrar mensaje de error
-//     return;
-//   }
-
-//   // Realizar la operación y actualizar la pantalla
-//   ultimoValor = document.getElementById("resultado").textContent;
-// });
